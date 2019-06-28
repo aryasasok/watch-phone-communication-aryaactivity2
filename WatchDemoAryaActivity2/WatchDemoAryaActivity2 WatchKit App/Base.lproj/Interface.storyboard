@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchDemoAryaActivity2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Hello" id="otn-At-IQT"/>
+                        <button width="1" alignment="left" title="Send" id="H48-uE-RwS">
+                            <connections>
+                                <action selector="buttonClicked" destination="AgC-eL-Hgc" id="pFd-UU-tgs"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" id="atI-u6-Jrs"/>
+                    </items>
+                    <connections>
+                        <outlet property="acknowledgeLabel" destination="atI-u6-Jrs" id="l3z-8h-KFc"/>
+                        <outlet property="messageLabel" destination="otn-At-IQT" id="bXA-be-e9S"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
