@@ -16,7 +16,6 @@ In program
  func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         print("Got a message")
         watchMessageLabel.text = "\(message["Message"]!)"
-        // This is calling the  closure and here we are sending the acknowledgement message back to the watch
         replyHandler(["Message" : "Acknowledged!"])
     }
 
