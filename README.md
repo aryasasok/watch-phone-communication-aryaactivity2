@@ -22,6 +22,7 @@ In program
 2. When receiving messages from the watch, you need to use a closure function. What is the reason why a closure is used?
 
 Answer 2,
+
 The closure is used because the  delivery of messages happen  asynchronously. 
 The sendmessage returns immediately, but the actual message delivery to the receiver might happen sometime later. 
 At that point, if the receiver wants to send back a reply(acknowledgement in our case), the replyHandler closure is invoked.
