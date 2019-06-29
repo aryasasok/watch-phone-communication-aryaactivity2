@@ -11,6 +11,8 @@ Answers 1,func session(_ session: WCSession, didReceiveMessage message: [String 
 
 
 In program
+
+
  func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         print("Got a message")
         watchMessageLabel.text = "\(message["Message"]!)"
